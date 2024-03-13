@@ -16,7 +16,7 @@ local lazy_config = require "configs.lazy"
 -- load plugins
 require("lazy").setup({
   {
-    "Bot-wxt1221/Bot-wxt1221-NvChad-configs",
+    "Bot-wxt1221/NvChad",
     lazy = false,
     branch = "v2.5",
     import = "nvchad.plugins",
