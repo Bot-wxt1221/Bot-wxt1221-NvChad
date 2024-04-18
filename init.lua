@@ -13,6 +13,15 @@ vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
 
+if vim.g.neovide then
+  vim.o.guifont = "JetBrains Mono:h13" -- text below applies for VimScript
+  vim.g.neovide_scale_factor = 1.2
+  vim.g.neovide_cursor_animation_length = 0
+  vim.g.neovide_cursor_trail_size = 0
+  vim.g.neovide_cursor_antialiasing = false
+    -- Put anything you want to happen only in Neovide here
+end
+
 -- load plugins
 require("lazy").setup({
   {
